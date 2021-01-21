@@ -1,6 +1,8 @@
 # manhunt-plugin
 A recreation of the plugin Dream uses in his manhunts, cause why not.
 
+**Disclaimer**: If you are dream or anybody apart of the Dream Team and you request this to be taken down, this will be deleted off of GitHub. This is simply a recreation of the plugin. Now for anybody else, if this gets taken down, you'll know why.
+
 ---
 
 ## Building The JAR file
