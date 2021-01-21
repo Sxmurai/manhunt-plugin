@@ -1,7 +1,7 @@
 # manhunt-plugin
 A recreation of the plugin Dream uses in his manhunts, cause why not.
 
-**Disclaimer**: If you are dream or anybody apart of the Dream Team and you request this to be taken down, this will be deleted off of GitHub. This is simply a recreation of the plugin. Now for anybody else, if this gets taken down, you'll know why.
+**Disclaimer**: If you are dream or anybody apart of the Dream Team and you request this to be taken down, this will be deleted off of GitHub. This is simply a recreation of the plugin. Now for anybody else, if this gets taken down, you'll know why. If you need to contact me, contact me at `aesthetical#2545` on discord. My DMs are open, so no need to send a FR unless you need too (if i turn off my dms, which i dont think i will)
 
 ---
 
