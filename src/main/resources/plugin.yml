@@ -1,0 +1,22 @@
+name: Manhunt
+main: manhunt.Manhunt
+version: 2.0.0
+
+commands:
+  addhunter:
+    description: Adds a hunter
+    usage: /addhunter [playerName]
+  listhunters:
+    aliases:
+      - allhunters
+      - lshunters
+    description: Lists all of the hunters
+    usage: /listhunters
+  removehunter:
+    description: Removes a hunter
+    usage: /removehunter [playerName]
+  settarget:
+    aliases:
+      - starget
+    description: Sets the target
+    usage: /settarget [playerName | none]

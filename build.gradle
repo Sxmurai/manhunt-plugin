@@ -1,0 +1,53 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.3'
+    }
+}
+
+plugins {
+    id 'com.github.johnrengelman.shadow' version '4.0.3'
+    id 'java'
+}
+
+apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'java'
+
+version = '2.0.0'
+group = 'manhunt'
+archivesBaseName = 'manhunt'
+
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = JavaVersion.VERSION_13
+
+repositories {
+    jcenter()
+
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/public' }
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
+    compile 'org.bukkit:bukkit:1.15.2-R0.1-SNAPSHOT'
+}
+
+tasks.withType(Jar) {
+    manifest {
+        attributes([
+                'Main-Class': 'manhunt.Manhunt',
+                'Class-Path': sourceSets.main.compileClasspath,
+                'Description': 'Bukkit plugin for Manhunts'
+        ])
+    }
+}
+
+shadowJar {
+    archiveBaseName.set("Manhunt")
+    archiveClassifier.set("")
+    archiveVersion.set("")
+}
+
+build.dependsOn(shadowJar)
